@@ -1,0 +1,238 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.myriad.pos.Cashier"
+    android:orientation="vertical"
+    android:background="@color/btn">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Grocery"
+            android:id="@+id/groc_b"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/auto_b"
+            android:layout_weight="1"
+            android:text="@string/Automotive"
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/General"
+            android:id="@+id/general_b"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/clear"
+            android:layout_weight="1"
+            android:text="@string/Clear"
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/seven"
+            android:id="@+id/b7"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/eight"
+            android:id="@+id/b8"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nine"
+            android:id="@+id/b9"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Scan"
+            android:id="@+id/scan_b"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/four"
+            android:id="@+id/b4"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/five"
+            android:id="@+id/b5"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/six"
+            android:id="@+id/b6"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/gst"
+            android:id="@+id/gst_b"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/one"
+            android:id="@+id/b1"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/two"
+            android:id="@+id/b2"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/three"
+            android:id="@+id/b3"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pst"
+            android:id="@+id/pst_b"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/zero"
+            android:id="@+id/b0"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dec"
+            android:id="@+id/bdot"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dzero"
+            android:id="@+id/b00"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/total"
+            android:id="@+id/total_b"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+</LinearLayout>

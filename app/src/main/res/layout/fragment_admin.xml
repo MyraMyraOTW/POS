@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.myriad.pos.Admin"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Add_Product"
+            android:id="@+id/add_prod"
+            android:layout_weight="1"
+            android:textSize="12sp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cancel_sale"
+            android:layout_weight="1"
+            android:text="@string/Cancel_Transaction"
+            android:textSize="12sp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Print_receipts"
+            android:id="@+id/print_receipt"
+            android:layout_weight="1"
+            android:textSize="12sp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/clear"
+            android:layout_weight="1"
+            android:text="@string/Clear"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/seven"
+            android:id="@+id/b7"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/eight"
+            android:id="@+id/b8"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nine"
+            android:id="@+id/b9"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Scan"
+            android:id="@+id/scan_b"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/four"
+            android:id="@+id/b4"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/five"
+            android:id="@+id/b5"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/six"
+            android:id="@+id/b6"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Refund"
+            android:id="@+id/refund_b"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/one"
+            android:id="@+id/b1"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/two"
+            android:id="@+id/b2"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/three"
+            android:id="@+id/b3"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Change_Tax"
+            android:id="@+id/mtax_b"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_gravity="left|top" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/zero"
+            android:id="@+id/b0"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dec"
+            android:id="@+id/bdot"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dzero"
+            android:id="@+id/b00"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/discount_b"
+            android:layout_weight="1"
+            android:text="@string/Discount" />
+    </LinearLayout>
+</LinearLayout>
