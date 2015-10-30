@@ -58,7 +58,8 @@
             android:paddingRight="10dp"
             android:textSize="25dp"
             android:hint="@string/hint"
-            android:enabled="false" />
+            android:enabled="false"
+            android:singleLine="true" />
 
         <LinearLayout
             android:orientation="vertical"

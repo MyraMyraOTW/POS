@@ -26,7 +26,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:textSize="25sp"
-            android:hint="@string/hint" />
+            android:hint="@string/hint"
+            android:singleLine="true" />
 
         <LinearLayout
             android:orientation="horizontal"

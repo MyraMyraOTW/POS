@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity implements Cashier.OnFragmentInteractionListener{
 
     @Override
@@ -30,6 +32,11 @@ public class MainActivity extends AppCompatActivity implements Cashier.OnFragmen
     public void appendText(String text){
         TextView resultsstd = (TextView) findViewById(R.id.tview);
         resultsstd.append(text);
+    }
+
+    public void clearText(){
+        TextView resultsstd = (TextView) findViewById(R.id.tview);
+        resultsstd.setText("");
     }
 
     @Override
@@ -56,8 +63,35 @@ public class MainActivity extends AppCompatActivity implements Cashier.OnFragmen
 
 
     @Override
-    public void onFragmentInteraction(String string) {
+    public void onFragmentInteraction(String string, int chk) {
         FragmentManager FragManager = getFragmentManager();
 
+        if(chk == 0){
+            appendText(string);
+        }
+
+        if(string.equals("Clear") && chk == 1) {
+            clearText();
+        }
+
+        if(string.equals("Grocery") && chk == 1){
+
+        }
+
+        if(string.equals("Auto") && chk == 1){
+
+        }
+
+        if(string.equals("General") && chk == 1){
+
+        }
+
+        if(string.equals("GST") && chk == 1){
+
+        }
+
+        if(string.equals("PST") && chk == 1){
+
+        }
     }
 }
