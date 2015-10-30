@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/btn">
 
     <LinearLayout
         android:orientation="vertical"
@@ -16,7 +17,8 @@
             android:id="@+id/clear"
             android:layout_weight="1"
             android:text="@string/Clear"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -25,7 +27,8 @@
             android:text="@string/Add_Product"
             android:id="@+id/add_prod"
             android:layout_weight="1"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -34,7 +37,8 @@
             android:id="@+id/cancel_sale"
             android:layout_weight="1"
             android:text="@string/Cancel_Transaction"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -43,7 +47,8 @@
             android:text="@string/Print_receipts"
             android:id="@+id/print_receipt"
             android:layout_weight="1"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:background="?android:attr/selectableItemBackground" />
 
     </LinearLayout>
 
@@ -59,7 +64,8 @@
             android:layout_height="match_parent"
             android:text="@string/seven"
             android:id="@+id/b7"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -67,7 +73,8 @@
             android:layout_height="match_parent"
             android:text="@string/four"
             android:id="@+id/b4"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -75,7 +82,8 @@
             android:layout_height="match_parent"
             android:text="@string/one"
             android:id="@+id/b1"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -83,7 +91,8 @@
             android:layout_height="match_parent"
             android:text="@string/zero"
             android:id="@+id/b0"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
     </LinearLayout>
 
     <LinearLayout
@@ -98,7 +107,8 @@
             android:layout_height="match_parent"
             android:text="@string/eight"
             android:id="@+id/b8"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -106,7 +116,8 @@
             android:layout_height="match_parent"
             android:text="@string/five"
             android:id="@+id/b5"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -114,7 +125,8 @@
             android:layout_height="match_parent"
             android:text="@string/two"
             android:id="@+id/b2"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -122,7 +134,8 @@
             android:layout_height="match_parent"
             android:text="@string/dec"
             android:id="@+id/bdot"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
     </LinearLayout>
 
     <LinearLayout
@@ -137,7 +150,8 @@
             android:layout_height="match_parent"
             android:text="@string/nine"
             android:id="@+id/b9"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -145,7 +159,8 @@
             android:layout_height="match_parent"
             android:text="@string/six"
             android:id="@+id/b6"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -153,7 +168,8 @@
             android:layout_height="match_parent"
             android:text="@string/three"
             android:id="@+id/b3"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -161,7 +177,8 @@
             android:layout_height="match_parent"
             android:text="@string/dzero"
             android:id="@+id/b00"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
     </LinearLayout>
 
     <LinearLayout
@@ -174,9 +191,9 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:text="@string/Scan"
             android:id="@+id/scan_b"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -184,7 +201,8 @@
             android:layout_height="match_parent"
             android:text="@string/Refund"
             android:id="@+id/refund_b"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -192,7 +210,8 @@
             android:layout_height="match_parent"
             android:text="@string/Change_Tax"
             android:id="@+id/mtax_b"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -200,6 +219,7 @@
             android:layout_height="match_parent"
             android:id="@+id/discount_b"
             android:layout_weight="1"
-            android:text="@string/Discount" />
+            android:text="@string/Discount"
+            android:background="?android:attr/selectableItemBackground" />
     </LinearLayout>
 </LinearLayout>

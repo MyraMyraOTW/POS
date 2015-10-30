@@ -188,7 +188,6 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:text="@string/Scan"
             android:id="@+id/scan_b"
             android:layout_weight="1"
             android:background="?android:attr/selectableItemBackground" />

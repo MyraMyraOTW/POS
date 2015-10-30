@@ -1,6 +1,7 @@
 package com.example.myriad.pos;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -41,4 +42,18 @@ public class Cashier extends Fragment {
 
         }
     };
+
+    private View.OnClickListener handlespecial = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+
+            }
+        }
+    };
+
+    public interface OnFragmentInteractionListener {
+        // TODO: Update argument type and name
+        public void onFragmentInteraction(String string);
+    }
 }
