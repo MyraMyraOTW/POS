@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:weightSum="5"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp" >
 
         <TextView
             android:layout_width="match_parent"
@@ -27,7 +27,9 @@
             android:layout_marginBottom="10dp"
             android:textSize="25sp"
             android:hint="@string/hint"
-            android:singleLine="true" />
+            android:singleLine="true"
+            android:textColor="@color/btn"
+            android:textColorHint="@color/btn" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -35,50 +37,32 @@
             android:layout_height="fill_parent"
             android:weightSum="6"
             android:layout_weight="1"
-            android:baselineAligned="false">
+            android:baselineAligned="false" >
 
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="5">
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/Admin"
-                    android:id="@+id/admin_button"
-                    android:layout_weight="1"
-                    android:background="?android:attr/selectableItemBackground" />
+                android:layout_weight="5" >
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
                     android:text="@string/Cashier"
-                    android:id="@+id/cashier_button"
-                    android:layout_weight="1"
-                    android:background="?android:attr/selectableItemBackground" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/Receipt"
-                    android:id="@+id/receipt_button"
+                    android:id="@+id/cash_sw"
                     android:layout_weight="1"
                     android:background="?android:attr/selectableItemBackground" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/l3"
+                android:id="@+id/linearLayout2"
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
-                android:background="@color/btn">
+                android:background="@color/btn" >
 
                 <LinearLayout
                     android:orientation="vertical"
@@ -90,40 +74,37 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/button12"
+                        android:id="@+id/clear"
                         android:layout_weight="1"
                         android:text="@string/Clear"
-                        android:textSize="12sp"
+                        android:layout_gravity="center_horizontal"
                         android:background="?android:attr/selectableItemBackground" />
 
                     <Button
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/Add_Product"
-                        android:id="@+id/button13"
+                        android:text="@string/Grocery"
+                        android:id="@+id/groc"
                         android:layout_weight="1"
-                        android:textSize="12sp"
                         android:background="?android:attr/selectableItemBackground" />
 
                     <Button
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/button14"
+                        android:id="@+id/auto"
                         android:layout_weight="1"
-                        android:text="@string/Cancel_Transaction"
-                        android:textSize="12sp"
+                        android:text="@string/Automotive"
                         android:background="?android:attr/selectableItemBackground" />
 
                     <Button
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/Print_receipts"
-                        android:id="@+id/button15"
+                        android:text="@string/General"
+                        android:id="@+id/general"
                         android:layout_weight="1"
-                        android:textSize="12sp"
                         android:background="?android:attr/selectableItemBackground" />
                 </LinearLayout>
 
@@ -138,7 +119,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/seven"
-                        android:id="@+id/button12"
+                        android:id="@+id/b7"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -147,8 +128,9 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/four"
-                        android:id="@+id/button13"
+                        android:id="@+id/b4"
                         android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
                         android:background="?android:attr/selectableItemBackground" />
 
                     <Button
@@ -156,7 +138,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/one"
-                        android:id="@+id/button14"
+                        android:id="@+id/b1"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -165,7 +147,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/zero"
-                        android:id="@+id/button15"
+                        android:id="@+id/b0"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
                 </LinearLayout>
@@ -181,7 +163,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/eight"
-                        android:id="@+id/button12"
+                        android:id="@+id/b8"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -190,7 +172,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/five"
-                        android:id="@+id/button13"
+                        android:id="@+id/b5"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -199,7 +181,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/two"
-                        android:id="@+id/button14"
+                        android:id="@+id/b2"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -208,7 +190,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/dec"
-                        android:id="@+id/button15"
+                        android:id="@+id/dot"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
                 </LinearLayout>
@@ -224,7 +206,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/nine"
-                        android:id="@+id/button12"
+                        android:id="@+id/b9"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -233,7 +215,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/six"
-                        android:id="@+id/button13"
+                        android:id="@+id/b6"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -242,7 +224,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/three"
-                        android:id="@+id/button14"
+                        android:id="@+id/b3"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -251,7 +233,7 @@
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
                         android:text="@string/dzero"
-                        android:id="@+id/button15"
+                        android:id="@+id/b00"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
                 </LinearLayout>
@@ -266,7 +248,17 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/button12"
+                        android:id="@+id/refund"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/Refund" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/gst"
+                        android:id="@+id/gst"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -274,8 +266,8 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/Refund"
-                        android:id="@+id/button13"
+                        android:text="@string/pst"
+                        android:id="@+id/pst"
                         android:layout_weight="1"
                         android:background="?android:attr/selectableItemBackground" />
 
@@ -283,18 +275,9 @@
                         style="?android:attr/buttonStyleSmall"
                         android:layout_width="fill_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/Change_Tax"
-                        android:id="@+id/button14"
+                        android:text="@string/total"
+                        android:id="@+id/total"
                         android:layout_weight="1"
-                        android:background="?android:attr/selectableItemBackground" />
-
-                    <Button
-                        style="?android:attr/buttonStyleSmall"
-                        android:layout_width="fill_parent"
-                        android:layout_height="match_parent"
-                        android:id="@+id/button15"
-                        android:layout_weight="1"
-                        android:text="@string/Discount"
                         android:background="?android:attr/selectableItemBackground" />
                 </LinearLayout>
             </LinearLayout>
@@ -303,10 +286,7 @@
                 android:orientation="vertical"
                 android:layout_width="4dp"
                 android:layout_height="match_parent"
-                android:background="#7d7123"></LinearLayout>
-
+                android:background="#7d7123" />
         </LinearLayout>
-
     </LinearLayout>
-
 </LinearLayout>
