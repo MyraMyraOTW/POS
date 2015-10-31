@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,81 +21,36 @@ import org.w3c.dom.Text;
 import java.io.*;
 
 
-public class MainActivity extends AppCompatActivity implements Cashier.OnFragmentInteractionListener{
-
-    public double taxvarg=.05;
-    public double taxvarp=.07;
-
-    public int can_be_tax = 0;
-    public boolean type_tax = false;
-
-    private double value = 0.0;
-
-    private String fileName = "receipt.txt";
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentManager fragmentManager = getFragmentManager();
-
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-
+        findViewById(R.id.b1).setOnClickListener(num);
+        findViewById(R.id.b2).setOnClickListener(num);
+        findViewById(R.id.b3).setOnClickListener(num);
+        findViewById(R.id.b4).setOnClickListener(num);
+        findViewById(R.id.b5).setOnClickListener(num);
+        findViewById(R.id.b5).setOnClickListener(num);
+        findViewById(R.id.b6).setOnClickListener(num);
+        findViewById(R.id.b7).setOnClickListener(num);
+        findViewById(R.id.b8).setOnClickListener(num);
+        findViewById(R.id.b9).setOnClickListener(num);
+        findViewById(R.id.b0).setOnClickListener(num);
+        findViewById(R.id.b00).setOnClickListener(num);
+        findViewById(R.id.dot).setOnClickListener(num);
 
     }
 
-    public void appendText(String text){
-        TextView resultsstd = (TextView) findViewById(R.id.tview);
-        resultsstd.append(text);
-    }
-
-    public void clearText(){
-        TextView resultsstd = (TextView) findViewById(R.id.tview);
-        resultsstd.setText("");
-    }
-
-    public double taxable(){
-        TextView resultsstd = (TextView) findViewById(R.id.tview);
-        String temp = resultsstd.getText().toString();
-
-        double test;
-        double test2;
-
-        test = Double.parseDouble(temp);
-
-        if (can_be_tax == 1){
-            if (type_tax == true){
-                test2 = test * taxvarg;
-                test = test + test2;
-            }
-
-            if(type_tax == false) {
-                test2 = test * taxvarp;
-                test = test + test2;
-            }
+    private View.OnClickListener num = new View.OnClickListener() {
+        public void onClick(View v) {
+            TextView resultsstd = (TextView) findViewById(R.id.tview);
+            Button std = (Button)v;
+            resultsstd.append(std.getText());
         }
-
-        return test;
-    }
-
-    public void itemhandler (int chk){
-        TextView resultsstd = (TextView) findViewById(R.id.tview);
-        switch (chk){
-            case 1:
-                resultsstd.setText(String.valueOf(taxable()));
-                break;
-            case 2:
-
-                break;
-            case 3:
-
-                break;
-        }
-    }
-
-
+    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -117,41 +73,4 @@ public class MainActivity extends AppCompatActivity implements Cashier.OnFragmen
 
         return super.onOptionsItemSelected(item);
     }
-
-
-    @Override
-    public void onFragmentInteraction(String string, int chk) {
-        FragmentManager FragManager = getFragmentManager();
-
-        if(chk == 0){
-            appendText(string);
-        }
-
-        if(string.equals("Clear") && chk == 1) {
-            clearText();
-        }
-
-        if(string.equals("Grocery") && chk == 1){
-            itemhandler(1);
-        }
-
-        if(string.equals("Auto") && chk == 1){
-
-        }
-
-        if(string.equals("General") && chk == 1){
-
-        }
-
-        if(string.equals("GST") && chk == 1){
-            can_be_tax = 1;
-            type_tax = true;
-        }
-
-        if(string.equals("PST") && chk == 1){
-            can_be_tax = 1;
-            type_tax = false;
-        }
-    }
-
 }
